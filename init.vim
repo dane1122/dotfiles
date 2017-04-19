@@ -1,3 +1,7 @@
+syntax enable
+set background=dark
+colorscheme solarized
+
 set number
 set ignorecase
 set smartcase
@@ -39,8 +43,8 @@ vnoremap <leader>P "+P
 imap jj <Esc>
 
 " eslint
-let g:neomake_javascript_enabled_makers = ['eslint']
-autocmd! BufWritePost,BufEnter * Neomake
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" autocmd! BufWritePost,BufEnter * Neomake
 
 " disable folding
 set nofoldenable
@@ -58,7 +62,7 @@ nnoremap <leader>kk :call grepg#RunGrepGCommand(getline('.'))<CR>
 let g:jsx_ext_required = 0
 
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plug 'https://github.com/neomake/neomake.git'
+" Plug 'https://github.com/neomake/neomake.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'pangloss/vim-javascript'
@@ -68,3 +72,12 @@ Plug 'evidanary/grepg.vim'
 Plug 'https://github.com/yaymukund/vim-haxe.git'
 
 call plug#end()
+
+"Need vim-plug
+
+"2 space indentation
+"set tabstop=4
+"set softtabstop=0
+"set expandtab
+"set shiftwidth=2
+"set smarttab
